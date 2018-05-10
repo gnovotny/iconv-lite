@@ -5,8 +5,8 @@ var assert = require('assert'),
 if (!iconv.supportsStreams)
     return;
 
-var Readable = require('stream').Readable,
-    Writable = require('stream').Writable;
+var Readable = require('readable-stream').Readable,
+    Writable = require('readable-stream').Writable;
 
 // Create a source stream that feeds given array of chunks.
 function feeder(chunks) {
